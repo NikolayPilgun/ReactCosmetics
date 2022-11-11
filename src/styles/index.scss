@@ -1,11 +1,5 @@
-@import "_resetStyles.scss";
+//@import "_resetStyles.scss";
 @import "_fonts.scss";
-
-// body {
-// 	background-color: #d6c493;
-// 	color: #232760;
-// 	font-family: "Roboto", Arial, "Helvetica Neue", Helvetica, sans-serif;
-// }
 
 :root {
 	--black: #343434;
@@ -14,6 +8,16 @@
 	--shadow2: 0px 13px 46px rgba(0, 0, 0, 0.13);
 	--pink: #fe956f;
 }
+
+body {
+	margin: 0;
+	background: var(--bg);
+	color: var(--black);
+	font-family: "Poppins", Arial, "Helvetica Neue", Helvetica, sans-serif;
+	transition: all 3ms ease;
+	scroll-behavior: smooth;
+}
+
 .App {
 	display: flex;
 	flex-direction: column;
