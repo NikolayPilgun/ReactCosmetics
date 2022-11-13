@@ -13,17 +13,16 @@ import img7 from "../assets/img7.png";
 import img8 from "../assets/img8.png";
 import img9 from "../assets/img9.png";
 
-interface ISliderProducts {
+export interface ISliderProducts {
 	name: string;
 	detail: string;
 	price: string;
 	img: string;
 }
 
-interface IProductsData {
+export interface IProductsData {
 	name: string;
-	detail?: string;
-	details?: string;
+	detail: string;
 	price: string;
 	img: string;
 	type: string;
@@ -94,56 +93,56 @@ export const ProductsData: IProductsData[] = [
 	},
 	{
 		name: "CONDITIONER",
-		details: "Best Conditioner",
+		detail: "Best Conditioner",
 		price: "30",
 		img: img7,
 		type: "conditioner",
 	},
 	{
 		name: "CONDITIONER",
-		details: "Best Conditioner",
+		detail: "Best Conditioner",
 		price: "30",
 		img: img8,
 		type: "conditioner",
 	},
 	{
 		name: "CONDITIONER",
-		details: "Best Conditioner",
+		detail: "Best Conditioner",
 		price: "30",
 		img: img9,
 		type: "conditioner",
 	},
 	{
 		name: "CONDITIONER",
-		details: "Best Conditioner",
+		detail: "Best Conditioner",
 		price: "30",
 		img: img10,
 		type: "conditioner",
 	},
 	{
 		name: "FOUNDATION",
-		details: "Nourish your skin",
+		detail: "Nourish your skin",
 		price: "12",
 		img: img11,
 		type: "foundation",
 	},
 	{
 		name: "FOUNDATION",
-		details: "Nourish your skin",
+		detail: "Nourish your skin",
 		price: "12",
 		img: img12,
 		type: "foundation",
 	},
 	{
 		name: "FOUNDATION",
-		details: "Nourish your skin",
+		detail: "Nourish your skin",
 		price: "12",
 		img: img13,
 		type: "foundation",
 	},
 	{
 		name: "FOUNDATION",
-		details: "Nourish your skin",
+		detail: "Nourish your skin",
 		price: "12",
 		img: img14,
 		type: "foundation",
