@@ -23,10 +23,26 @@ function Testimonials() {
 			<div className={styles.reviews}>Reviews</div>
 			<div className={styles.carousel}>
 				<Swiper
+					// Default parameters
 					slidesPerView={3}
 					slidesPerGroup={1}
 					spaceBetween={20}
 					className={styles.tCarousal}
+					// Responsive breakpoints
+					breakpoints={{
+						// when window width is >= 856px
+						856: {
+							slidesPerView: 3,
+						},
+						// when window width is >= 640px
+						640: {
+							slidesPerView: 2,
+						},
+						// when window width is >= 0px
+						0: {
+							slidesPerView: 1,
+						},
+					}}
 				>
 					{TestimonialsData.map((testimonial, i) => (
 						<SwiperSlide key={i}>

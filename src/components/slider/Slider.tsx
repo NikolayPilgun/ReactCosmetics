@@ -12,6 +12,7 @@ function Slider(): JSX.Element {
 	return (
 		<div className="s-container">
 			<Swiper
+				// Default parameters
 				modules={[Navigation, Pagination]}
 				slidesPerView={3}
 				spaceBetween={40}
@@ -21,6 +22,21 @@ function Slider(): JSX.Element {
 				navigation={true}
 				pagination={{ clickable: true }}
 				className="mySwiper"
+				// Responsive breakpoints
+				breakpoints={{
+					// when window width is >= 856px
+					856: {
+						slidesPerView: 3,
+					},
+					// when window width is >= 640px
+					640: {
+						slidesPerView: 2,
+					},
+					// when window width is >= 0px
+					0: {
+						slidesPerView: 1,
+					},
+				}}
 			>
 				{SliderProducts.map((slide, i) => (
 					<SwiperSlide key={i}>
