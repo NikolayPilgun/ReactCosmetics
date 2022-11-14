@@ -49,7 +49,8 @@ function Footer() {
 						<span>Company</span>
 						<span className={styles.pngLine}>
 							<UserIcon className={styles.icon} />
-							<UserIcon className={styles.icon1} />
+							<span className={styles.iconFon}></span>
+							<UserIcon className={styles.icon2} />
 							<span>About us</span>
 						</span>
 					</div>
